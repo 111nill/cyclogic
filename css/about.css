@@ -1,0 +1,232 @@
+/* SECTION 1 */
+
+.top-container {
+  margin: 0 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-areas:
+    "showcase top-box"
+    "showcase top-box";
+  justify-content: center;
+  align-content: center;
+  background: #eee;
+  border-top: 2px solid #f7f7f7;
+}
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  box-shadow: var(--shadow-lg);
+}
+.top-box {
+  grid-area: top-box;
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "title"
+    "content-1"
+    "content-2";
+  align-content: center;
+  text-align: left;
+  line-height: 1.4;
+}
+.top-box__title {
+  grid-area: title;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.box-content {
+  text-indent: 0.5rem;
+  font-size: 1.1rem;
+}
+.top-box__content-1 {
+  grid-area: content-1;
+}
+.top-box__content-2 {
+  grid-area: content-2;
+}
+
+.span__color {
+  color: #28939d;
+  font-weight: 700;
+}
+/* SECTION 2 */
+.portfolio-wrap {
+  margin: 0 2rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+.portfolio {
+  background: #fcfcfc;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.portfolio__title {
+  font-size: 5rem;
+  font-family: "Noto Sans KR" sans-serif;
+  font-weight: 900;
+  margin-left: 0.825rem;
+  margin-bottom: 2.125rem;
+}
+.portfolio img {
+  box-shadow: var(--shadow-lg);
+  padding: 0.025rem;
+}
+.portfolio img:nth-child(1),
+.portfolio img:nth-child(4),
+.portfolio img:nth-child(5),
+.portfolio img:nth-child(8) {
+  align-self: center;
+}
+/* SECTION 3 */
+.about-wrap {
+  margin: 0 2rem;
+  height: 100%;
+}
+.about__title {
+  text-align: right;
+  padding: 1rem;
+  font-size: 5rem;
+  font-family: "Noto Sans KR" sans-serif;
+  font-weight: 900;
+  margin-left: 0.825rem;
+}
+.boxes {
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.box {
+  text-align: center;
+  background: #fff;
+  padding: 0.825rem;
+  transition: all 0.2s ease-in;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  background: #58a7af;
+  color: #fff;
+}
+
+.box h2 {
+  margin: 0.5rem 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+/* SECTION 4 : CONTACT US */
+
+.contact-wrap {
+  background: #004986;
+}
+.contactus {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactus__wrapper {
+  max-width: 100%;
+  padding: 0 2rem;
+}
+
+.contactus__subtitle {
+  font-family: "Noto Serif KR", sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  color: #76e0f3;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.contactus__title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: left;
+  color: #fcfcfc;
+  font-size: 4rem;
+}
+
+.contactus__text {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+  padding: 2.5rem 0rem 1rem 0rem;
+  color: #fff;
+}
+
+.contactus .contactus__icon {
+  margin-top: 2.5rem;
+}
+
+.contactus__icon .contactus__mail {
+  background: #f2f2f2;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 1.25rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #30336b;
+}
+
+.contactus__icon .contactus__mail a {
+  cursor: pointer;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  .top-container {
+    grid-template-areas:
+      "showcase showcase"
+      "top-box top-box";
+  }
+  .top-box .top-box__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .top-box .box-content {
+    font-size: 1rem;
+  }
+  .nav .nav__lists {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 320px) {
+  .portfolio__title,
+  .about__title {
+    font-size: 1.5rem;
+  }
+  .contactus {
+    height: 100%;
+  }
+  .contactus__wrapper {
+    padding: 2rem 1rem;
+  }
+  .contactus__subtitle {
+    font-size: 1.1rem;
+  }
+  .contactus__title {
+    font-size: 1.4rem;
+  }
+  .contactus__text {
+    font-size: 0.9rem;
+  }
+  .contactus__icon .contactus__mail {
+    padding: 0.8rem 2rem;
+
+    font-size: 0.7rem;
+  }
+}
