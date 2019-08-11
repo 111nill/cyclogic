@@ -208,49 +208,30 @@
 .contactus__icon .contactus__mail a {
   cursor: pointer;
 }
-
-/* MEDIA QUERY
-@media screen and (max-width: 768px) {
-  .top-container {
-    grid-template-areas:
-      "showcase showcase"
-      "top-box top-box";
-  }
-  .top-box .top-box__title {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .top-box .box-content {
-    font-size: 1rem;
-  }
-  .nav .nav__lists {
+@media screen and (max-width: 460px) {
+  .showcase__grid {
     grid-template-columns: 1fr;
   }
-}
-@media screen and (max-width: 320px) {
-  .portfolio__title,
-  .about__title {
-    font-size: 1.5rem;
+  .showcase__content .showcase__title {
+    font-size: 2rem;
   }
-  .contactus {
-    height: 100%;
-  }
-  .contactus__wrapper {
-    padding: 2rem 1rem;
-  }
-  .contactus__subtitle {
-    font-size: 1.1rem;
-  }
-  .contactus__title {
-    font-size: 1.4rem;
-  }
-  .contactus__text {
+  .showcase__content .g-content {
     font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
   }
-  .contactus__icon .contactus__mail {
-    padding: 0.8rem 2rem;
-
-    font-size: 0.7rem;
+  .portfolio-wrap .portfolio__title,
+  .about-wrap .about__title {
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: right;
+    font-size: 3rem;
   }
-} */
+  .about-wrap .about__title {
+    text-align: center;
+  }
+  .about-wrap .about__grid {
+    padding: 0;
+  }
+}
