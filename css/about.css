@@ -85,7 +85,7 @@
   margin-right: 0.825rem;
 }
 .about__grid {
-  padding-top: 3rem;
+  padding-top: 5rem;
   margin-bottom: 5rem;
   display: grid;
   grid-gap: 1.2rem;
@@ -98,9 +98,6 @@
 .about__card {
   position: relative;
   overflow: hidden;
-}
-.about__card .about__img {
-  max-height: 100%;
 }
 .about__card .about__information {
   position: absolute;
@@ -207,8 +204,7 @@
   cursor: pointer;
 } */
 @media screen and (max-width: 460px) {
-  .showcase__grid,
-  .about__grid {
+  .showcase__grid {
     grid-template-columns: 1fr;
   }
   .showcase__content .showcase__title {
