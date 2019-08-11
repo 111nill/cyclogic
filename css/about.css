@@ -85,7 +85,7 @@
   margin-right: 0.825rem;
 }
 .about__grid {
-  padding-top: 5rem;
+  padding-top: 3rem;
   margin-bottom: 5rem;
   display: grid;
   grid-gap: 1.2rem;
@@ -207,7 +207,8 @@
   cursor: pointer;
 } */
 @media screen and (max-width: 460px) {
-  .showcase__grid {
+  .showcase__grid,
+  .about__grid {
     grid-template-columns: 1fr;
   }
   .showcase__content .showcase__title {
