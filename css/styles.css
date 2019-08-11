@@ -38,6 +38,11 @@ a {
 }
 img {
   max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+p {
+  line-height: 1.4;
 }
 :root {
   --nav-color: #54585a;
