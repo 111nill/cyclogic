@@ -31,7 +31,7 @@
       rgba(0, 0, 0, 0.5) 50%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url(../images/bg.jpg) no-repeat center center/cover;
+    url(../images/bg-min.jpg) no-repeat center center/cover;
   grid-column: span 6;
   padding: 1em;
   display: flex;
@@ -72,7 +72,7 @@
       rgba(0, 0, 0, 0.5) 50%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url(../images/linke.jpg) no-repeat center center/cover;
+    url(../images/linke-min.jpg) no-repeat center center/cover;
   grid-column: span 3;
 }
 .grid__index-c {
@@ -82,7 +82,7 @@
       rgba(0, 0, 0, 0.3) 50%,
       rgba(0, 0, 0, 0.3) 100%
     ),
-    url(../images/linkf.jpg) no-repeat center center/cover;
+    url(../images/linkf-min.jpg) no-repeat center center/cover;
   grid-column: span 3;
 }
 
