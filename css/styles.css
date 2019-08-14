@@ -2,12 +2,12 @@
 @import "index.css";
 @import "header.css";
 @import "about.css";
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap");
+@import "project.css";
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Noto+Sans+KR:400,500,700,900&display=swap");
 @font-face {
   font-family: "IropkeBatangM";
   src: url("fonts/IropkeBatangM.woff");
 }
-
 html,
 body,
 .wholewrap {
@@ -17,9 +17,6 @@ body,
 body {
   background: #fcfcfc;
   font-family: "Noto Sans KR" Arial, Helvetica, sans-serif;
-}
-p {
-  font-family: "IropkeBatangM", serif;
 }
 .wholewrap {
   background-color: #fcfcfc;
