@@ -1,18 +1,330 @@
-.index {
-  background: linear-gradient(
-    to bottom,
-    rgba(202, 237, 249, 0.85) 0%,
-    rgba(202, 236, 247, 0.86) 100%
-  );
+/* SECTION 1 */
+.whole-wrap {
+  margin: 0 1em;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+.grid__index {
+  display: grid;
+  max-width: 100em;
+  max-height: auto;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(500px, auto);
+  grid-gap: 1em;
 }
 
-.index-wrap {
+.grid__card-index:nth-child(n + 2) {
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.grid__card-index:nth-child(n + 2):hover {
+  transform: scale(1.05);
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.92),
+    1px 4px 4px 2px rgba(0, 0, 0, 0.52);
+}
+.grid__index-a {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../images/bg-min.jpg) no-repeat center center/cover;
+  grid-column: span 6;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.92),
+    1px 4px 4px 2px rgba(0, 0, 0, 0.52);
+}
+.showcase__title {
+  font-family: "Noto Sans KR" sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: #fcfcfc;
+  text-align: center;
+}
+.showcase__content {
+  padding: 1.5em;
+  padding-top: 2em;
+  font-size: 1.25em;
+  color: #fcfcfc;
+  font-weight: 300;
+  line-height: 2em;
+  text-align: center;
+}
+.span__color {
+  color: #81ecec;
+}
+.grid__index-b,
+.grid__index-c {
+  display: flex;
+  align-items: flex-end;
+  color: #fcfcfc;
+}
+.grid__index-b {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../images/linke-min.jpg) no-repeat center center/cover;
+  grid-column: span 3;
+}
+.grid__index-c {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(../images/linkf-min.jpg) no-repeat center center/cover;
+  grid-column: span 3;
+}
+
+.index__link-wrap {
+  height: 40%;
+  padding-left: 1.5rem;
+}
+.link__btn {
+  font-size: 3em;
+  text-decoration-line: overline;
+}
+@media screen and (max-width: 1200px) {
+  .whole-wrap {
+    height: auto;
+  }
+  .logo-wrap {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .logo-wrap .header__logo {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .nav {
+    display: none;
+  }
+  .grid__card-index {
+    grid-column: span 12;
+  }
+}
+@media screen and (max-width: 414px) {
+  .whole-wrap {
+    height: auto;
+  }
+  .logo-wrap {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .logo-wrap .header__logo {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .nav {
+    display: none;
+  }
+  .showcase__title {
+    margin-top: 1em;
+  }
+  .showcase__content {
+    font-size: 1em;
+    text-align: left;
+    text-indent: 1em;
+  }
+}
+/* SECTION 2 */
+.portfolio-wrap {
+  margin: 0 2rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+.portfolio {
+  background: #fcfcfc;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+}
+.portfolio__title {
+  font-size: 5rem;
+  font-family: "Noto Sans KR" sans-serif;
+  font-weight: 900;
+  margin-left: 0.825rem;
+  margin-bottom: 2.125rem;
+}
+.portfolio img {
+  box-shadow: var(--shadow-lg);
+}
+.portfolio img:nth-child(1),
+.portfolio img:nth-child(4),
+.portfolio img:nth-child(5),
+.portfolio img:nth-child(8) {
+  align-self: center;
+}
+/* SECTION 3 */
+
+.about__title {
+  text-align: right;
+  padding: 1rem;
+  font-size: 5rem;
+  font-family: "Noto Sans KR" sans-serif;
+  font-weight: 900;
+  margin-right: 0.825rem;
+}
+.about__grid {
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.about__card {
+  text-align: center;
+}
+.about__card {
+  position: relative;
+  overflow: hidden;
+}
+.about__card .about__information {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #28939d;
+  color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: 0.4s transform ease, 0.1s opacity ease;
+}
+.about__card:hover .about__information {
+  transform: translateY(0%);
+  opacity: 1;
+}
+.about__information h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.about__information p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.about__information .about__job {
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+/* SECTION 4 : CONTACT US */
+/* 
+.contact-wrap {
+  background: #004986;
+}
+.contactus {
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.index-wrap img {
+.contactus__wrapper {
   max-width: 100%;
+  padding: 0 2rem;
+}
+
+.contactus__subtitle {
+  font-family: "Noto Serif KR", sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  color: #76e0f3;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.contactus__title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: left;
+  color: #fcfcfc;
+  font-size: 4rem;
+}
+
+.contactus__text {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+  padding: 2.5rem 0rem 1rem 0rem;
+  color: #fff;
+}
+
+.contactus .contactus__icon {
+  margin-top: 2.5rem;
+}
+
+.contactus__icon .contactus__mail {
+  background: #f2f2f2;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 1.25rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #30336b;
+}
+
+.contactus__icon .contactus__mail a {
+  cursor: pointer;
+} */
+@media screen and (max-width: 460px) {
+  .showcase__grid {
+    grid-template-columns: 1fr;
+  }
+  .showcase__content .showcase__title {
+    font-size: 2rem;
+  }
+  .showcase__content .g-content {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .portfolio-wrap .portfolio__title,
+  .about-wrap .about__title {
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: right;
+    font-size: 3rem;
+  }
+  .about-wrap .about__title {
+    text-align: center;
+  }
+  .about-wrap .about__grid {
+    padding: 0;
+  }
 }

@@ -1,0 +1,133 @@
+.record {
+  margin: 0 1em;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.record .record__content-wrap {
+  max-width: 1280px;
+  max-height: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.record__picture-wrap {
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.article {
+  grid-column: span 7;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #444444;
+  padding: 2em 0 2em 2em;
+  position: relative;
+}
+.article-wrap-12 {
+  grid-row: 2/3;
+  grid-column: span 12;
+  padding-left: 2em;
+}
+.record__picture {
+  max-width: 100%;
+  padding: 1em;
+}
+
+.article__date {
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: "IropkeBatangM", serif;
+  padding-left: 0.3rem;
+  border-left: 9px solid rgba(22, 102, 112);
+}
+
+.article__title {
+  font-size: 1.75em;
+  margin: 1.25em 0;
+  font-weight: 700;
+  font-family: "IropkeBatangM", serif;
+}
+
+.article__content {
+  line-height: 2rem;
+  font-size: 1.125em;
+  text-indent: 1em;
+}
+
+.article-wrap-12 .article__content {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.article__note {
+  font-style: italic;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.record__link {
+  position: fixed;
+  bottom: 3%;
+  right: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+  .record__picture-wrap {
+    grid-column: span 12;
+  }
+  .article {
+    grid-column: span 12;
+    grid-row: 1;
+  }
+  .article-wrap-12 {
+    grid-row: 3;
+  }
+}
+@media screen and (max-width: 414px) {
+  .record {
+    height: auto;
+    margin-bottom: 5em;
+  }
+  .record .record__content-wrap {
+    margin: 0;
+  }
+  .record__picture-wrap,
+  .record__article,
+  .article-wrap-12 {
+    grid-column: span 12;
+  }
+  .article,
+  .article-wrap-12 {
+    padding: 0;
+  }
+  .article-wrap,
+  .article-wrap-12 {
+    text-align: center;
+  }
+  .article__date {
+    display: inline-block;
+    font-size: 1.5em;
+  }
+  .article__title {
+    font-size: 0.8em;
+  }
+  .article__content,
+  .article-wrap-12 .article__content {
+    font-size: 0.5em;
+    line-height: 2em;
+  }
+  .record__link {
+    position: static;
+    display: block;
+    text-align: right;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .article__title {
+    font-size: 0.7em;
+  }
+}
