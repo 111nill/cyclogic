@@ -3,8 +3,7 @@
 @import "index.css";
 @import "project.css";
 @import "record.css";
-@import "july.css";
-@import "august.css";
+@import "team.css";
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cinzel|Noto+Sans+KR:400,500,700,900&display=swap");
 @font-face {
@@ -47,4 +46,58 @@ p {
   --nav-color: #54585a;
   --shadow-lg: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+/* index */
+
+.whole {
+  background: rgba(250, 239, 235, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(250, 239, 235, 1) 0%,
+    rgba(239, 222, 209, 1) 45%,
+    rgba(235, 211, 198, 1) 51%,
+    rgba(234, 199, 190, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(250, 239, 235, 1)),
+    color-stop(45%, rgba(239, 222, 209, 1)),
+    color-stop(51%, rgba(235, 211, 198, 1)),
+    color-stop(100%, rgba(234, 199, 190, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(250, 239, 235, 1) 0%,
+    rgba(239, 222, 209, 1) 45%,
+    rgba(235, 211, 198, 1) 51%,
+    rgba(234, 199, 190, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(250, 239, 235, 1) 0%,
+    rgba(239, 222, 209, 1) 45%,
+    rgba(235, 211, 198, 1) 51%,
+    rgba(234, 199, 190, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(250, 239, 235, 1) 0%,
+    rgba(239, 222, 209, 1) 45%,
+    rgba(235, 211, 198, 1) 51%,
+    rgba(234, 199, 190, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(250, 239, 235, 1) 0%,
+    rgba(239, 222, 209, 1) 45%,
+    rgba(235, 211, 198, 1) 51%,
+    rgba(234, 199, 190, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faefeb', endColorstr='#eac7be', GradientType=1 );
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

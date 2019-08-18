@@ -22,22 +22,23 @@
       <nav class="nav">
         <ul class="nav__lists">
           <li class="nav__list"><a href="project.html">프로젝트</a></li>
-          <li class="nav__list"><a href="project.html">우리들</a></li>
+          <li class="nav__list"><a href="team.html">우리들</a></li>
           <li class="nav__list"><a href="contact.html">문의</a></li>
         </ul>
       </nav>
     </div>
 
-    <main class="august">
-      <h6 class="record-unknown">RECORD</h6>
-      <h1 class="record__month">August</h1>
-      <section class="august-grid">
-        <article class="aufourth">
-          <div class="date">
-            <h2 class="dom">2019-08-04 Sun</h2>
-            <span class="dom-sub">외형 및 배터리팩 제작 [2]</span>
+    <main class="record august">
+      <div class="record__top">
+        <h1 class="record__month">August</h1>
+      </div>
+      <section class="record__grid">
+        <article class="record__content-whole">
+          <div class="record__title-wrap">
+            <h2 class="record__dom">2019-08-04 Sun</h2>
+            <span class="record__sub">외형 및 배터리팩 제작 [2]</span>
           </div>
-          <p class="para">
+          <p class="record__para">
             먼저, Mechnical Team은 지난번에 제작한 나무 패널을 조립하여
             모터휠(뒷바퀴)을 바디에 장착했다. 이 과정에서 어려웠던 점이 하나
             있었는데, 바퀴를 고정하기 위해 축을 나무와 나무로 덮어주려 할 때 PB
@@ -48,11 +49,11 @@
             모델의 경우에는 합금을 사용할 것이기 때문에 아래 사진과 같이
             연결하지는 않을 것이다.
           </p>
-          <figure class="aufourth-pic">
+          <figure class="august__pic">
             <img src="images/august/0804gr1.jpg" class="pic" />
             <img src="images/august/0804gr2.jpg" class="pic" />
           </figure>
-          <p class="para">
+          <p class="record__para">
             같은 시간, Electric Team은 27일에 완성한 배터리팩에 충전단자를
             연결하는 작업을 했다. 이 과정에서 스파크가 발생하여 멀티 미터의 접지
             단자가 타버리는 경미한 사고가 있었지만, 덕분에 전기에 대해 다시 한번
@@ -60,17 +61,17 @@
             겪으며 충전단자를 성공적으로 연결하였고, 아래 사진과 같이 불이
             들어오는 것을 보아 충전이 가능함을 확인하였다.
           </p>
-          <figure class="aufourth-pic">
+          <figure class="august__pic">
             <img src="images/august/0804gr3.jpg" class="pic" />
             <img src="images/august/0804gr4.jpg" class="pic" />
           </figure>
         </article>
-        <article class="aufourth">
-          <div class="date">
-            <h2 class="dom">2019-08-07 Wed</h2>
-            <span class="dom-sub">전원 스위치 구현 + 구동 테스트 [3]</span>
+        <article class="record__content-whole">
+          <div class="record__title-wrap">
+            <h2 class="record__dom">2019-08-07 Wed</h2>
+            <span class="record__sub">전원 스위치 구현 + 구동 테스트 [3]</span>
           </div>
-          <p class="para">
+          <p class="record__para">
             이제 배터리팩과 모터를 연결하여 구동이 되는지 확인하기로 했다.
             필요한 부품은 전원 스위치와 스로틀이었다. 분석 결과, 전원 스위치는
             자체적으로 제작할 수 있다고 판단하였으며, 스로틀은 회로를 구현하기가
@@ -89,12 +90,12 @@
             연결했을 때 정상적으로 작동하였다.
           </p>
         </article>
-        <article class="aufourth">
-          <div class="date">
-            <h2 class="dom">2019-08-10 Sat</h2>
-            <span class="dom-sub">외형 제작 [3] + 구동 테스트 [2]</span>
+        <article class="record__content-whole">
+          <div class="record__title-wrap">
+            <h2 class="record__dom">2019-08-10 Sat</h2>
+            <span class="record__sub">외형 제작 [3] + 구동 테스트 [2]</span>
           </div>
-          <p class="para">
+          <p class="record__para">
             최악의 경우를 생각해서 배터리 셀을 12개 더 구매하였고, 혹시나 하는
             생각에 고장 난것으로 판단한 배터리를 다시 충전해서 테스트해본 결과
             고장이 아닌 것으로 나타났다. 그러나 여전히 출력을 개선할 필요가
@@ -107,17 +108,17 @@
             연결하면 거꾸로 회전하는 것임이 밝혀졌다. 이로써 구동 테스트는
             성공적으로 완료되었다.
           </p>
-          <figure class="aufourth-pic">
+          <figure class="august__pic">
             <img src="images/august/0810gr1.jpg" class="pic" />
             <img src="images/august/0810gr2.jpg" class="pic" />
           </figure>
         </article>
-        <article class="aufourth">
-          <div class="date">
-            <h2 class="dom">2019-08-13 Tue</h2>
-            <span class="dom-sub">전자 브레이크 구현</span>
+        <article class="record__content-whole">
+          <div class="record__title-wrap">
+            <h2 class="record__dom">2019-08-13 Tue</h2>
+            <span class="record__sub">전자 브레이크 구현</span>
           </div>
-          <p class="para">
+          <p class="record__para">
             전자 브레이크를 기계식 브레이크와 분리하여 뒷바퀴 커버에 구현하려
             했으나, 다시 한번 회의를 거친 결과 효율성이 떨어진다고 판단하였다.
             그래서 전자 브레이크와 기계식 브레이크를 합쳐서 핸들에 구현하기로
