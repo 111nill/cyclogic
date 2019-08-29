@@ -439,6 +439,8 @@ textarea {
   padding: 0.2em 0;
 }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }

@@ -4,7 +4,6 @@ function init() {
   const backgrounds = [
     `radial-gradient(#2B3760, #0B1023)`,
     `radial-gradient(#4E3022, #161616)`,
-    `radial-gradient(#4E4342, #161616)`,
     `radial-gradient(#2B3760, #0B1023)`
   ];
   //Tracker
@@ -93,29 +92,16 @@ function init() {
       scrollSlide -= 1;
     }
 
-    if (scrollSlide > 5) {
+    if (scrollSlide > 2) {
       scrollSlide = 0;
     }
     if (scrollSlide < 0) {
-      scrollSlide = 5;
+      scrollSlide = 4;
     }
     switchDots(scrollSlide);
     nextSlide(scrollSlide);
     console.log(scrollSlide);
   }
-}
-
-function throttle(func, limit) {
-  let inThrottle;
-  return function() {
-    const args = arguments;
-    const context = this;
-    if (!inThrottle) {
-      func.apply(context, args);
-      inThrottle = true;
-      setTimeout(() => (inThrottle = false), limit);
-    }
-  };
 }
 
 init();

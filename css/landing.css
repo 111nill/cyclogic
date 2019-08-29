@@ -1,0 +1,117 @@
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+.gnb {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+}
+
+.gnb ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.gnb .gnb__list {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.gnb .gnb__list a {
+  color: #f0ede4;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  transition: color 0.4s ease;
+}
+.gnb .gnb__list a:hover {
+  color: #76c9d5;
+}
+.landing {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000 !important;
+  color: #f0ede4;
+}
+#maintext,
+.landing__title {
+  font-family: "helvetica", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+
+  margin-bottom: 1rem;
+}
+
+.landing__para {
+  font-size: 1.5rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  background-color: black;
+  padding: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.landing__para a {
+  color: #4ab583;
+}
+.landing__para a:hover {
+  color: #aedfe6;
+}
+
+.span__color {
+  color: #76c9d5;
+}
+
+.landing#home {
+  background: url("../images/landing1.jpg") no-repeat center center/cover;
+}
+.landing#about {
+  background: url("../images/landing2.jpg") no-repeat center center/cover;
+}
+.landing#project {
+  background: url("../images/landing3.jpg") no-repeat center center/cover;
+}
+.landing#contact {
+  background: url("") no-repeat center center/cover;
+}
+@media screen and (max-width: 768px) {
+  .landing__title,
+  #maintext {
+    font-size: 2.5rem;
+  }
+
+  .landing__para {
+    width: 100%;
+
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .gnb {
+    width: 100vw;
+  }
+  .gnb ul li a {
+    font-size: 0.7rem;
+  }
+  .landing__title,
+  #maintext {
+    font-size: 1.5rem;
+  }
+  .landing__para {
+    padding: 2rem;
+    font-size: 0.7rem;
+  }
+}
